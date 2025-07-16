@@ -109,14 +109,17 @@ No dependencies or build tools required.
 git clone https://github.com/yourusername/neotrack-expense-tracker.git
 cd neotrack-expense-tracker
 
-🧾 License
+
+
+
+###🧾 License
 This project is licensed under the MIT License.
 
-👨‍💻 Author
+##👨‍💻 Author
 NeoTrack designed and coded by [krishna sahu]
 For any questions or feedback, feel free to connect!
 email:krishna.sahu.work@gmail.com
 
-📬 Feedback
+##📬 Feedback
 Have suggestions or improvements?
 Open an issue or submit a PR to contribute to this open-source project.
