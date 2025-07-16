@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NeoTrack - Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>NeoTrack<span>.</span></h1>
+      <p>Track Your Income & Expenses Smartly</p>
+    </header>
+
+    <section class="summary-box">
+      <div class="balance">
+        <h2>Current Balance</h2>
+        <h3 id="balance">₹0.00</h3>
+      </div>
+      <div class="summary">
+        <div>
+          <p>Income</p>
+          <span id="income" class="plus">₹0.00</span>
+        </div>
+        <div>
+          <p>Expense</p>
+          <span id="expense" class="minus">₹0.00</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="filters">
+      <select id="filter-category">
+        <option value="">All Categories</option>
+        <option value="Food">Food</option>
+        <option value="Transport">Transport</option>
+        <option value="Salary">Salary</option>
+        <option value="Shopping">Shopping</option>
+        <option value="Other">Other</option>
+      </select>
+      <input type="date" id="filter-start" />
+      <input type="date" id="filter-end" />
+      <button id="export-csv">Export CSV</button>
+    </section>
+
+    <section>
+      <canvas id="summaryChart" height="150"></canvas>
+    </section>
+
+    <form id="form">
+      <input type="text" id="text" placeholder="Transaction Name" />
+      <input type="number" id="amount" placeholder="Amount" />
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <select id="category">
+        <option value="Other">Category</option>
+        <option value="Food">Food</option>
+        <option value="Transport">Transport</option>
+        <option value="Salary">Salary</option>
+        <option value="Shopping">Shopping</option>
+      </select>
+      <input type="date" id="date" />
+      <button type="submit">Add</button>
+      <p id="error" class="error"></p>
+    </form>
+
+    <ul id="transaction-list" class="list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
